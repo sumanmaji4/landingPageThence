@@ -31,7 +31,12 @@ function Questions() {
   return (
     <div className='pt-8 pr-20 w-[600px]  font-manrope text-left'>
       {qs.map((item, index) => (
-        <div key={index}>
+        <div
+          key={index}
+          className={
+            index != qs.length - 1 ? ' border-b-[1px] border-b-slate-300 ' : ''
+          }
+        >
           <p className=' font-semibold text-xl text-[#1C1C1C] flex justify-between flex-wrap pt-8 '>
             <span className='w-[400px] pb-6'>{item.q}</span>
             <span onClick={() => setnumber(index)} className=' cursor-pointer'>
@@ -43,7 +48,7 @@ function Questions() {
             </span>
           </p>
           {index == number && (
-            <p className='text-[#617275] font-normal text-base pb-6 border border-b-slate-300 '>
+            <p className='text-[#617275] font-normal text-base pb-6 '>
               {item.ans}
             </p>
           )}
