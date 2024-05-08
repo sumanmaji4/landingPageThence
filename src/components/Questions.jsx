@@ -34,7 +34,7 @@ function Questions() {
         <div key={index}>
           <p className=' font-semibold text-xl text-[#1C1C1C] flex justify-between flex-wrap pt-8 '>
             <span className='w-[400px] pb-6'>{item.q}</span>
-            <span onClick={() => setnumber(index)}>
+            <span onClick={() => setnumber(index)} className=' cursor-pointer'>
               {index == number ? (
                 <img src='/minus.svg' alt='close' />
               ) : (
