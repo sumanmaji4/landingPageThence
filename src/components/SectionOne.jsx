@@ -18,7 +18,7 @@ function SectionOne() {
           Success Stories
         </h5>
         <h1 className='font-[600] text-[56px] leading-[67px] tracking-tight'>
-          Every success journey we've encountered.{' '}
+          Every success journey we’ve encountered.{' '}
         </h1>
       </div>
 
